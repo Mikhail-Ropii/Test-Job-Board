@@ -4,14 +4,14 @@ import { BsBookmark } from "react-icons/bs";
 
 type JobCardProps = {
   card: {
-    id: number;
+    id: string;
     pictures: string[];
     title: string;
     name: string;
     address: string;
     createdAt: string;
   };
-  getById: (id: number) => void;
+  getById: (id: string) => void;
 };
 
 export const JobCard = ({ card, getById }: JobCardProps) => {
