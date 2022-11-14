@@ -1,4 +1,4 @@
-export type JobTypes = {
+export interface IJob {
   id: string;
   name: string;
   email: string;
@@ -15,4 +15,4 @@ export type JobTypes = {
   createdAt: string;
   description: string;
   employment_type: string[];
-};
+}

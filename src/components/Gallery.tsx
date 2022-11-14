@@ -1,0 +1,15 @@
+interface GalleryProps {
+  pictures: string[];
+}
+
+export const Gallery = ({ pictures }: GalleryProps) => {
+  return (
+    <ul className="flex">
+      {pictures.map((pic: string) => (
+        <li key={pic}>
+          <img className="rounded" src={pic} alt="Attached images" />
+        </li>
+      ))}
+    </ul>
+  );
+};

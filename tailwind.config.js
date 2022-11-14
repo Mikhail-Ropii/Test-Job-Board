@@ -8,6 +8,7 @@ module.exports = {
       cardDescBg: "#FFFFFF",
       mainText: " #3A4562",
       secondaryText: "#878D9D",
+      bgButton: "#384564",
     },
     fontFamily: {
       novaLight: ["Nova-light", "arial"],
@@ -49,6 +50,20 @@ module.exports = {
         {
           lineHeight: "30px",
           letterSpacing: "0.75px",
+        },
+      ],
+      xxl: [
+        "28px",
+        {
+          lineHeight: "34px",
+          letterSpacing: "0.41px",
+        },
+      ],
+      additional: [
+        "16px",
+        {
+          lineHeight: "16px",
+          letterSpacing: "-0.46px",
         },
       ],
     },

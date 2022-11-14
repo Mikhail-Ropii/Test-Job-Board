@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
 import * as Api from "../services/Api";
 import { JobCard } from "../components/JobCard";
-import { JobTypes } from "../../type";
+import { IJob } from "../models";
 
-export const JobList = (setJobDetail: (arg: JobTypes) => void) => {
+interface JobListProps {
+  setJobDetail: (selectedJob: IJob) => void;
+}
+
+export const JobList = ({ setJobDetail }: JobListProps) => {
   const [jobsList, setJobsList] = useState<any[]>();
 
   useEffect(() => {
