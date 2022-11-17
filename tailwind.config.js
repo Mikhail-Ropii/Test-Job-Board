@@ -9,6 +9,7 @@ module.exports = {
       mainText: " #3A4562",
       secondaryText: "#878D9D",
       bgButton: "#384564",
+      mobileMain: "#38415D",
     },
     fontFamily: {
       novaLight: ["Nova-light", "arial"],

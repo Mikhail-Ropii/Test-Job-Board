@@ -4,16 +4,16 @@ import { BsBookmark } from "react-icons/bs";
 
 export const NavBlock = () => {
   return (
-    <>
-      <p>
-        <BsBookmark className="hidden lg:block" />
-        <AiOutlineStar className="lg:hidden" color="#70778B" />
+    <div className="mb-8 mt-6 flex ">
+      <BsBookmark className="hidden mr-4 lg:block" />
+      <AiOutlineStar className="mr-3 lg:hidden" color="#70778B" size={25} />
+      <p className="mr-9 text-[#38415D] text-opacity-80 font-novaRegular text-s">
         Save to my list
       </p>
-      <p>
-        <BsFillShareFill color="#70778B" />
+      <BsFillShareFill className="mr-3" color="#70778B" size={20} />
+      <p className="text-[#38415D] text-opacity-80 font-novaRegular text-s">
         Share
       </p>
-    </>
+    </div>
   );
 };

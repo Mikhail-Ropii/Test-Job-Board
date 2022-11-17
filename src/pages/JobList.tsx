@@ -2,13 +2,10 @@ import { useEffect, useState } from "react";
 import * as Api from "../services/Api";
 import { JobCard } from "../components/JobCard";
 import { IJob } from "../models";
+import { useNavigate } from "react-router-dom";
 
-interface JobListProps {
-  setJobDetail: (selectedJob: IJob) => void;
-}
-
-export const JobList = ({ setJobDetail }: JobListProps) => {
-  const [jobsList, setJobsList] = useState<any[]>();
+export const JobList = () => {
+  const [jobsList, setJobsList] = useState<IJob[]>();
 
   useEffect(() => {
     async function getJobsList() {
@@ -20,19 +17,13 @@ export const JobList = ({ setJobDetail }: JobListProps) => {
     getJobsList();
   }, []);
 
-  const getById = (id: string) => {
-    const selectedJob = jobsList?.find((job) => job.id === id);
-    console.log(selectedJob);
-    setJobDetail(selectedJob);
-  };
-
   console.log(jobsList);
   return (
     <div className="bg-mainBg">
       <div className="max-w-[1400px] ml-auto mr-auto">
         <ul>
           {jobsList?.map((card) => (
-            <JobCard key={card.id} card={card} getById={getById} />
+            <JobCard key={card.id} card={card} />
           ))}
         </ul>
       </div>

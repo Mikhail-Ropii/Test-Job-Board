@@ -1,6 +1,7 @@
 import { ImLocation } from "react-icons/im";
 import { AiFillStar } from "react-icons/ai";
 import { BsBookmark } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 type JobCardProps = {
   card: {
@@ -11,10 +12,9 @@ type JobCardProps = {
     address: string;
     createdAt: string;
   };
-  getById: (id: string) => void;
 };
 
-export const JobCard = ({ card, getById }: JobCardProps) => {
+export const JobCard = ({ card }: JobCardProps) => {
   const { id, pictures, title, name, address, createdAt } = card;
 
   const createDate = new Date(createdAt.slice(0, 10));
@@ -35,12 +35,12 @@ export const JobCard = ({ card, getById }: JobCardProps) => {
         </div>
         <div className="flex flex-col-reverse lg:flex-row lg:justify-between">
           <div>
-            <p
-              onClick={() => getById(id)}
+            <Link
+              to={`/${id}`}
               className="font-novaRegular text-m pb-1.5 text-mainText"
             >
               {title}
-            </p>
+            </Link>
             <p className="pb-1.5 font-novaRegular text-s text-secondaryText">
               Department name &#x2022; {name}
             </p>
