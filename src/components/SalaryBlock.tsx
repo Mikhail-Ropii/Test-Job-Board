@@ -4,7 +4,7 @@ interface SalaryBlockProps {
 
 export const SalaryBlock = ({ value }: SalaryBlockProps) => {
   return (
-    <div>
+    <div className="lg:flex flex-col-reverse lg:min-w-max">
       <p className="font-novaRegular text-m text-mobileMain text-opacity-80">
         Brutto, per year
       </p>

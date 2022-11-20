@@ -4,7 +4,7 @@ interface ButtonProps {
 
 export const Button = ({ children }: ButtonProps) => {
   return (
-    <div className="rounded bg-bgButton min-w-[127px] min-h-[52px]">
+    <div className="rounded-lg uppercase max-w-full inline-block bg-bgButton text-[#FFFFFF] font-novaSemiBold text-[12px] py-[18px] px-[30px]">
       {children}
     </div>
   );
