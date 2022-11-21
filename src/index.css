@@ -4,17 +4,21 @@
 
 @font-face {
   font-family: "Nova-bold";
-  src: url("./assets/fonts/ProximaNova-Bold.woff");
+  font-weight: 700;
+  src: url("./assets/fonts/ProximaNova-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Nova-regular";
-  src: url("assets/fonts/ProximaNova-Regular.woff");
+  font-weight: 400;
+  src: url("./assets/fonts/ProximaNova-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Nova-light";
-  src: url("assets/fonts/ProximaNova-Light.woff");
+  font-weight: 300;
+  src: url("./assets/fonts/ProximaNova-Light.woff") format("woff");
 }
 @font-face {
   font-family: "Nova-semiBold";
-  src: url("assets/fonts/ProximaNova-Semibold.woff");
+  font-weight: 600;
+  src: url("./assets/fonts/ProximaNova-Semibold.woff") format("woff");
 }

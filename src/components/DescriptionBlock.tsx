@@ -8,7 +8,6 @@ export const DescriptionBlock = ({ description }: DescriptionBlockProps) => {
   const trimmedString = description.split("\n");
   const compensation = trimmedString[7].split(".");
   compensation.splice(-1, 1);
-  console.log(compensation);
 
   return (
     <div className="mb-8">

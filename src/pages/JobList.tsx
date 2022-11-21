@@ -16,7 +16,6 @@ export const JobList = () => {
     getJobsList();
   }, []);
 
-  console.log(jobsList);
   return (
     <div className="bg-mainBg">
       <div className="max-w-[1306px] lg:px-6 ml-auto mr-auto">

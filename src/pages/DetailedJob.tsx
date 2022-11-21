@@ -1,6 +1,7 @@
 import * as Api from "../services/Api";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import circle from "../images/circle.svg";
 import { IJob } from "../models";
@@ -15,6 +16,7 @@ import { Benefits } from "../components/Benefits";
 import { BlockTitle } from "../components/BlockTitle";
 import { Map } from "../components/Map";
 
+import { MdArrowBackIosNew } from "react-icons/md";
 import { ImLocation } from "react-icons/im";
 
 export const DetailedJob = () => {
@@ -58,7 +60,7 @@ export const DetailedJob = () => {
   return (
     <>
       {jobDetail && (
-        <div className="py-6 px-[15px] max-w-[1306px] ml-auto mr-auto lg:px-6 lg:flex justify-between">
+        <div className="py-6 px-[15px] max-w-[1306px] ml-auto mr-auto lg:px-14 lg:pb-28 lg:flex justify-between">
           <div className="lg:mr-[115px]">
             <div className="lg:flex justify-between lg:mb-[9px] items-baseline">
               <h1 className="text-xxl text-mainText font-novaBold mb-3 lg:mb-0">
@@ -113,6 +115,23 @@ export const DetailedJob = () => {
                 </p>
                 <Benefits benefits={benefits} />
               </div>
+            </div>
+            <div className="hidden lg:block absolute left-1">
+              <Link
+                className="lg:max-w-full lg:inline-block py-[18px] px-[25px] rounded-lg bg-bgButton bg-opacity-10"
+                to={"/"}
+              >
+                <div className="flex items-center">
+                  <MdArrowBackIosNew
+                    className="mr-[19px]"
+                    color="#384564"
+                    size={18}
+                  />
+                  <span className="block uppercase font-novaSemiBold text-mainText text-[12px] leading-4">
+                    RETURN TO JOB BOARD
+                  </span>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="lg:hidden">

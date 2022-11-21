@@ -12,10 +12,10 @@ module.exports = {
       mobileMain: "#38415D",
     },
     fontFamily: {
-      novaLight: ["Nova-light", "arial"],
-      novaRegular: ["Nova-regular", "arial"],
-      novaSemiBold: ["Nova-semiBold", "arial"],
-      novaBold: ["Nova-bold", "arial"],
+      novaLight: ["Nova-light", "sans-serif"],
+      novaRegular: ["Nova-regular", "sans-serif"],
+      novaSemiBold: ["Nova-semiBold", "sans-serif"],
+      novaBold: ["Nova-bold", "sans-serif"],
     },
     fontSize: {
       xs: [
