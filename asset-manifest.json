@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test-job-board/static/css/main.c8bbd256.css",
-    "main.js": "/test-job-board/static/js/main.d10372df.js",
+    "main.js": "/test-job-board/static/js/main.90fd14ac.js",
     "static/media/ProximaNova-Light.woff": "/test-job-board/static/media/ProximaNova-Light.6f5ad2ca80abea2876d4.woff",
     "static/media/ProximaNova-Regular.woff": "/test-job-board/static/media/ProximaNova-Regular.99528640efded3e12591.woff",
     "static/media/ProximaNova-Bold.woff": "/test-job-board/static/media/ProximaNova-Bold.1f267da183b3d4fe3d5b.woff",
@@ -9,10 +9,10 @@
     "index.html": "/test-job-board/index.html",
     "static/media/circle.svg": "/test-job-board/static/media/circle.9c9206dd3c1c0d802c1f617ff249c37c.svg",
     "main.c8bbd256.css.map": "/test-job-board/static/css/main.c8bbd256.css.map",
-    "main.d10372df.js.map": "/test-job-board/static/js/main.d10372df.js.map"
+    "main.90fd14ac.js.map": "/test-job-board/static/js/main.90fd14ac.js.map"
   },
   "entrypoints": [
     "static/css/main.c8bbd256.css",
-    "static/js/main.d10372df.js"
+    "static/js/main.90fd14ac.js"
   ]
 }
